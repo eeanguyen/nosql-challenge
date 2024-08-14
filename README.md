@@ -11,7 +11,7 @@ This project involves evaluating and wrangling data from the UK Food Standards A
    mongoimport --db uk_food --collection establishments --file establishments.json --jsonArray
    ```
 
-### Part 2: Update the Database
+## Part 2: Update the Database
 2. Add a New Restaurant
    **Create a variable of the new resturant and add it to the collection**:
    ```
@@ -66,7 +66,7 @@ This project involves evaluating and wrangling data from the UK Food Standards A
     [{"$set": {"RatingValue": {"$toInt": "$RatingValue"}}}]
    )
    ```
-### Part 3: Exploratory Analysis
+## Part 3: Exploratory Analysis
 1. Which establishments have a hygiene score equal to 20?
    ```
     query = {'scores.Hygiene': 20}
